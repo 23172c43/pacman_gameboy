@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin: 0; background-color: black;">
+    <!-- <div class="console">
+        
+
+        <div class="gameboy-controls">
+            <button class="btn up">↑</button>
+            <div class="horizontal-buttons">
+              <button class="btn left">←</button>
+              <button class="btn right">→</button>
+            </div>
+            <button class="btn down">↓</button>
+        </div>
+    </div> -->
+
+
+    <div id="device" class="centered">
+        <div id="on-off-button" class="gb-input"></div>
+        <div id="case">
+          <div id="top">
+            <div id="inner-top">
+              <div id="on-off-stripes">
+                <div id="on-off-stripes-inner"></div>
+              </div>
+              <span id="on-off-text">OFF ● ON</span>
+            </div>
+          </div>
+          <div id="display-border" class="centered">
+            <!-- <div id="dot-matrix-stripes"></div>
+            <div id="dot-matrix-text">DOT MATRIX WITH STEREO SOUND</div>
+            <div id="battery-dot"></div>
+            <div id="battery-text">BATTERY</div> -->
+            <canvas id="canvas" width="420" height="450" style="text-align: center;"></canvas>
+          </div>
+          <div id="bottom">
+            <div id="dpad">
+              <div id="dpad-up" class="dpad-direction gb-input"><button id="btn-up"></button></div>
+              <div id="dpad-right" class="dpad-direction gb-input"><button id="btn-right"></button></div>
+              <div id="dpad-down" class="dpad-direction gb-input"><button id="btn-down"></button></div>
+              <div id="dpad-left" class="dpad-direction gb-input"><button id="btn-left"></button></div>
+              <div id="dpad-center" class="dpad-direction"></div>
+            </div>
+            <div id="a-b-button-wrapper">
+              <div id="a-b-button">
+                <div id="b-button" class="gb-input"></div>
+                <div id="a-button" class="gb-input"></div>
+              </div>
+              <div id="a-b-button-text">
+                <div>B</div>
+                <div>A</div>
+              </div>
+            </div>
+            <div id="select-start-button">
+              <div id="select-button-wrapper">
+                <div id="select-button" class="gb-input"></div>
+                <div id="select-button-text">SELECT</div>
+              </div>
+              <div id="start-button-wrapper">
+                <div id="start-button" class="gb-input"></div>
+                <div id="start-button-text">START</div>
+              </div>
+            </div>
+      
+            <div id="audio-boxes">
+              <div class="audio-box-strip"></div>
+              <div class="audio-box-strip"></div>
+              <div class="audio-box-strip"></div>
+              <div class="audio-box-strip"></div>
+              <div class="audio-box-strip"></div>
+              <div class="audio-box-strip"></div>
+            </div>
+            <div id="audio-phones">
+              <span id="audio-phones-text">PHONES</span>
+              <div id="audio-phones-stripes">
+                <div id="audio-phones-stripes-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div style="display:none;">
+        <img id="animation" src="animations.gif" width="140" height="20">
+        <img id="ghosts" src="ghost.png" width="140" height="20">
+    </div>
+    <script src="ghost.js"></script>
+    <script src="pacman.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
