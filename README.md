@@ -25,6 +25,6 @@ Tránh các con ma 👻 và ăn tất cả các điểm 🍒 để giành chiế
 
 ```bash
 # Clone repo
-git clone [https://github.com/yourusername/pacman-game.git](https://github.com/23172c43/pacman_gameboy)
+git clone [https://github.com/23172c43/pacman_gameboy]
 
 # Mở file pacman.html trên trình duyệt
